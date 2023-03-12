@@ -90,5 +90,7 @@ def play(path, command):
         print(f"\"{play_command}\" exited with \"{output}\", moving to next song...")
     
 if __name__ == "__main__":
-    play("D:\\Music\\Jet Set Radio\\Jet Set Radio Future", "D:\\Japanese\\Immersion\\ffplay.exe -autoexit -i \"{}\" -ss {}")
+    directory = input("Directory: ")
+    command = input("Command: ")
+    play(directory, command)
 
